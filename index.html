@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Daily Planner</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <h1>My Daily Planner</h1>
+    </header>
+    <main>
+      <section>
+        <form id="task-form">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Add a new Task..."
+            required
+          />
+          <button type="submit">Add</button>
+        </form>
+      </section>
+      <section>
+        <input type="text" id="search-input" placeholder="Search tasks..." />
+      </section>
+      <button id="clear-btn">Clear All Tasks</button>
+    </main>
+    <button id="back-to-top">↑ Top</button>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
 </html>
